@@ -1,4 +1,4 @@
-# Polaroid Now+ Instant Camera Generation - Product Page
+# Polaroid Now+ Instant Camera Generation - Product Detail Page
 
 A mobile-first product detail page for the Polaroid Now+ Instant Camera Generation 3, built with HTML, CSS, and JavaScript.
 
