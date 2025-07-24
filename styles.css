@@ -160,7 +160,7 @@ body {
 /* Main Content */
 .main-content {
     margin-top: 108px;
-    padding: 0;
+    padding: 0 0 104px 0;
     min-height: calc(100vh - 108px);
 }
 
@@ -331,7 +331,10 @@ body {
 
 /* AR Button */
 .ar-button {
-    margin: 16px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 358px;
     height: 64px;
     background-color: var(--accent-color);
@@ -349,6 +352,8 @@ body {
     line-height: 1.4285714285714286em;
     letter-spacing: 0.7142857249294009%;
     color: var(--primary-color);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .ar-button:hover {
@@ -399,11 +404,16 @@ body {
     .product-subtitle,
     .price-section,
     .product-features,
-    .product-description,
-    .ar-button {
+    .product-description {
         width: calc(100% - 32px);
         margin-left: 16px;
         margin-right: 16px;
+    }
+    
+    .ar-button {
+        width: calc(100% - 32px);
+        left: 16px;
+        transform: none;
     }
 }
 
